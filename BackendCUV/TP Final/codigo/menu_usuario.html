@@ -1,0 +1,51 @@
+<DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<title>Menu Usuario</title>
+</head>
+<body>
+<header>
+<h1> Opciones del Menu </h1>
+<button onclick="location.href='index_login.html'">Salir</button> Deslogearse
+</header>
+
+
+<form name="index_login" method="post" action="menu_usuario.php" >
+<p/>Debe Ingresar Usuario y Contraseña para confirmar la modificacion o el borrado:
+<p/>Usuario: <input type="text" name="txt_usuario" id="txt00" size="24" maxlength="10"/>
+Contraseña actual: <input type="password" name="txt_usrpassword" id="txt01" size="24" maxlength="10"/><p/>
+<hr size="8px" color="red">
+Seleccione esta opcion para modificar datos del Usuario: 
+*Si quiere modificar algun dato de su cuenta seleccione esta opcion y modifique los campos deseados<p/>
+MODIFICAR DATOS <input type="radio" name="menu_opcion" value="modificar">
+<p/><hr size="4px" color="black">
+*Para que la carga sea exitosa debe haber al menos una opcion cargada.<p/>
+*Solo se modificaran los campos llenados.<p/>
+*La contraseña solo admite letras mayusculas y minusculas, acentos, numeros, guion bajo "_", puntos ".", guiones "-".<p/>
+*La contraseña puede tener un minimo de 5 letras y maximo de 10.<p/>
+<hr size="4px" color="black">
+<p/><p/>
+Ingrese nueva contraseña: <input type="password" name="txt_modpassword" id="txt02" size="24" maxlength="10"/><p/>
+Ingrese nuevo Nombre: <input type="text" name="txt_modnombre" id="txt03" size="24"/><p/>
+Ingrese nuevo Apellido: <input type="text" name="txt_modapellido" id="txt04" size="24"/><p/>
+Ingrese nueva Edad: <input type="number" name="num_modedad" id="txt05" size="24"/><p/>
+Seleccione nuevo Sexo: <select name="sel_modsex"><option></option><option>Hombre</option><option>Mujer</option><option>Otro</option></select><p/>
+<p/>
+
+<p/><input type = "submit" value ="Modificar"><p/>
+
+<p/>
+<hr size="8px" color="red">
+
+Borrar cuenta? *Si quiere borrar su cuenta seleccione esta opcion y apriente el boton "borrar"<p/>
+BORRAR CUENTA <input type="radio" name="menu_opcion" value="borrar">
+
+<p/><input type = "submit" value ="Borrar"><p/>
+
+<p/>
+<hr size="8px" color="red">
+
+</form>
+</body>
+</html>

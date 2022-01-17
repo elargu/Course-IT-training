@@ -1,0 +1,32 @@
+<DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<title>Cargar un Usuario Nuevo</title>
+</head>
+<body>
+<header>
+<h1> Cargar un Usuario Nuevo </h1>
+<hr size="8px" color="red">
+</header>
+<form name="carga de registro" method="post" action="carga_registro.php" >
+*Para que la carga sea exitosa ningun campo tiene que quedar vacio.<p/>
+*El nombre de usuario y contraseña solo admite letras mayusculas y minusculas, numeros, acentos , guion bajo "_", puntos ".", guiones "-".<p/>
+*El nombre de usuario y contraseña puede tener un minimo de 5 letras y maximo de 10.<p/>
+*Nombre y Apellido tiene que contener al menos una letra y como maximo 24<p/>
+*Edad mayor a Cero<p/>
+<hr size="8px" color="red">
+<p/><p/>
+Escoga un Nombre de Usuario: <input type="text" name="txt_newusuario" id="txt01" size="24" maxlength="10"/><p/>
+Ingrese una contraseña: <input type="password" name="txt_newpassword" id="txt02" size="24" maxlength="10"/><p/>
+Ingrese su Nombre: <input type="text" name="txt_newnombre" id="txt03" size="24"/><p/>
+Ingrese su Apellido: <input type="text" name="txt_newapellido" id="txt04" size="24"/><p/>
+Ingrese su Edad: <input type="number" name="num_newedad" id="txt05" size="24"/><p/>
+Seleccione Sexo: <select name="sel_newsex"><option></option><option>Hombre</option><option>Mujer</option><option>Otro</option></select><p/>
+<p/><p/>
+<input type = "submit" value ="Enviar">
+<button onclick="location.href='index_login.html'">Cancelar</button>
+</form>
+</form>
+</body>
+</html>
